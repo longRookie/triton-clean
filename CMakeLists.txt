@@ -18,10 +18,10 @@ include(CTest)
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
 
 # Options
-option(TRITON_BUILD_PYTHON_MODULE "Build Python Triton bindings" OFF)
-option(TRITON_BUILD_PROTON "Build the Triton Proton profiler" ON)
-option(TRITON_BUILD_UT "Build C++ Triton Unit Tests" ON)
-option(TRITON_BUILD_WITH_CCACHE "Build with ccache (if available)" ON)
+option(TRITON_BUILD_PYTHON_MODULE "Build Python Triton bindings" ON)
+option(TRITON_BUILD_PROTON "Build the Triton Proton profiler" OFF)
+option(TRITON_BUILD_UT "Build C++ Triton Unit Tests" OFF)
+option(TRITON_BUILD_WITH_CCACHE "Build with ccache (if available)" OFF)
 set(TRITON_CODEGEN_BACKENDS "" CACHE STRING "Enable different codegen backends")
 
 if(TRITON_BUILD_WITH_CCACHE)
